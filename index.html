@@ -1,0 +1,157 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Netflix 
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Netflix+Sans&amp;display=swap" rel="stylesheet"/>
+  <style>
+   /* Netflix Sans is proprietary, fallback to system sans-serif */
+    body {
+      font-family: 'Netflix Sans', Arial, Helvetica, sans-serif;
+    }
+    /* Custom scrollbar for horizontal scroll bars */
+    ::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 3px;
+    }
+  </style>
+ </head>
+ <body class="bg-[#141414] text-white overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/90 to-black/60 backdrop-blur-sm">
+   <div class="max-w-[1920px] mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-14">
+    <div class="flex items-center space-x-6">
+     <a class="flex items-center" href="#">
+      <img alt="Netflix logo in red" class="h-8 w-auto" src="images/logo.png"/>
+     </a>
+     <nav class="hidden sm:flex space-x-4 text-sm font-normal text-white/90">
+      <a class="font-bold text-white hover:underline" href="#">
+       Inicio
+      </a>
+      <a class="hover:underline" href="#">
+       Series
+      </a>
+      <a class="hover:underline" href="#">
+       Películas
+      </a>
+      <a class="hover:underline" href="#">
+       Juegos
+      </a>
+      <a class="hover:underline" href="#">
+       Novedades populares
+      </a>
+      <a class="hover:underline" href="#">
+       Mi lista
+      </a>
+      <a class="hover:underline" href="#">
+       Explora por idiomas
+      </a>
+     </nav>
+    </div>
+    <div class="flex items-center space-x-6 text-white text-sm font-normal">
+     <button aria-label="Buscar" class="hover:text-white/80">
+      <i class="fas fa-search">
+      </i>
+     </button>
+     <button class="hover:text-white/80">
+      Niños
+     </button>
+     <button aria-label="Notificaciones" class="relative hover:text-white/80">
+      <i class="fas fa-bell">
+      </i>
+      <span class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] font-bold rounded-full px-[6px] leading-none">
+       12
+      </span>
+     </button>
+     <button class="w-8 h-8 rounded-sm overflow-hidden border border-transparent hover:border-white/70">
+      <img alt="User profile picture, a young man with short brown hair and blue shirt" class="w-full h-full object-cover" height="32" src="https://storage.googleapis.com/a1aa/image/802e83a8-6c7e-4f3e-3079-622dfb6432e8.jpg" width="32"/>
+     </button>
+     <button aria-label="Abrir menú de usuario" class="text-white hover:text-white/80">
+      <i class="fas fa-caret-down">
+      </i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="pt-16 max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+   <!-- Nuestra selección de hoy para ti -->
+   <section>
+    <h2 class="text-xl font-semibold mb-2 flex items-center gap-1">
+     Nuestra selección de hoy para ti
+     <svg class="h-5 w-5 text-[#00a8e1]" fill="none" stroke="currentColor" stroke-width="3" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round">
+      </path>
+     </svg>
+    </h2>
+    <div class="flex space-x-3 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent" style="scrollbar-width: thin;">
+     <!-- 7 items visible + partial 8th -->
+     <div class="relative min-w-[180px] sm:min-w-[220px] rounded overflow-hidden cursor-pointer shrink-0">
+      <img alt="" class="w-full h-auto object-cover rounded" height="124" src="" width="220"/>
+      <img alt="" class="absolute top-2 left-2 w-6 h-6" src=""/>
+      <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs font-bold px-2 py-[2px] rounded">
+       Recién agregado
+      </div>
+      <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs font-bold px-1 py-[1px] rounded" style="font-size: 9px; line-height: 1;">
+       TOP 10
+      </div>
+     </div>
+     <div class="relative min-w-[180px] sm:min-w-[220px] rounded overflow-hidden cursor-pointer shrink-0">
+      <img alt="" class="w-full h-auto object-cover rounded" height="124" src="" width="220"/>
+      <img alt="" class="absolute top-2 left-2 w-6 h-6" src=""/>
+      <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs font-bold px-1 py-[1px] rounded" style="font-size: 9px; line-height: 1;">
+       TOP 10
+      </div>
+     </div>
+     <div class="relative min-w-[180px] sm:min-w-[220px] rounded overflow-hidden cursor-pointer shrink-0">
+      <img alt="" class="w-full h-auto object-cover rounded" height="124" src="" width="220"/>
+      <img alt="" class="absolute top-2 left-2 w-6 h-6" src=""/>
+      <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs font-bold px-2 py-[2px] rounded">
+       Recién agregado
+      </div>
+      <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs font-bold px-1 py-[1px] rounded" style="font-size: 9px; line-height: 1;">
+       TOP 10
+      </div>
+     </div>
+     <div class="relative min-w-[180px] sm:min-w-[220px] rounded overflow-hidden cursor-pointer shrink-0">
+      <img alt="" class="w-full h-auto object-cover rounded" height="124" src="" width="220"/>
+      <img alt="" class="absolute top-2 left-2 w-6 h-6" src=""/>
+     </div>
+     <div class="relative min-w-[180px] sm:min-w-[220px] rounded overflow-hidden cursor-pointer shrink-0">
+      <img alt="" class="w-full h-auto object-cover rounded" height="124" src="" width="220"/>
+     </div>
+     <div class="relative min-w-[180px] sm:min-w-[220px] rounded overflow-hidden cursor-pointer shrink-0">
+      <img alt="" class="w-full h-auto object-cover rounded" height="124" src="" width="220"/>
+      <img alt="" class="absolute top-2 left-2 w-6 h-6" src=""/>
+      <div class="absolute bottom-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-[2px] rounded">
+       Recién agregado
+      </div>
+      <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-1 py-[1px] rounded" style="font-size: 9px; line-height: 1;">
+       TOP 10
+      </div>
+     </div>
+     <div class="relative min-w-[180px] sm:min-w-[220px] rounded overflow-hidden cursor-pointer shrink-0">
+      <img alt="" class="w-full h-auto object-cover rounded opacity-30" height="124" src="" width="220"/>
+      <img alt="" class="absolute top-2 left-2 w-6 h-6" src=""/>
+      <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-1 py-[1px] rounded" style="font-size: 9px; line-height: 1;">
+       TOP 10
+      </div>
+     </div>
+    </div>
+    <div class="mt-1 h-0.5 w-20 bg-gray-600 rounded">
+    </div>
+   </section>
+  </main>
+ </body>
+</html>
